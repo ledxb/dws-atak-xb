@@ -98,7 +98,7 @@ def get_parameters():
 	global port
 	global thr
 	global item
-	optp = OptionParser(add_help_option=False,epilog="dws atak xbs")
+	optp = OptionParser(add_help_option=False,epilog="hammers")
 	optp.add_option("-q","--quiet", help="set logging to ERROR",action="store_const", dest="loglevel",const=logging.ERROR, default=logging.INFO)
 	optp.add_option("-s","--server", dest="host",help="attack to server ip -s ip")
 	optp.add_option("-p","--port",type="int",dest="port",help="-p 80 default 80")
